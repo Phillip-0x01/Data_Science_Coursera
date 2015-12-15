@@ -1,0 +1,251 @@
+names
+load(hw1_data.csv)
+source(hw1_data.csv)
+~/Documents/Courses/R Programing/hw1_data.csv
+Documents/Courses/R Programing/hw1_data.csv
+hw1_data.csv
+dir
+getwd()
+names
+names(x)
+data <- source(hw1_data.csv)
+getdr
+getwd()
+hw1 <- source(hw1_data)
+hw1 <- source(R Programing/hw1_data.csv)
+hw1 <- source(R Programing/hw1_data.csv)
+hw1 = read.csv(hw1_data.csv)
+hw1 = read.csv("hw1_data.csv")
+names(hw1)
+head(hw1)
+dim(h1l)
+dim(hw1)
+hw1(152:152,)
+tail(hw1)
+hw1[2,0]
+dim(hw1)
+hw1[1:2,]
+hw1[152:153,0]
+hw1[152:153,]
+hw1[47,]
+hw1$ozone = "na"
+bad <- is.na(hw1$ozone)
+dim(bad)
+bad
+hw1$ozone
+hw1 = read.csv("hw1_data.csv")
+hw1$ozzone
+hw1$ozone
+head(hw1)
+hw1[ ,1]
+sum(na(hw1$ozone))
+sum(is.na(hw1$ozone))
+sum(is.na(hw1$ozone))
+sum(is.41(hw1$ozone))
+sum(is.value==41(hw1$ozone))
+sum(is.value(hw1$ozone))
+sum(is.na(hw1$ozone))
+head(hw1)
+sum(!is.na(hw1$ozone))
+length(na.omit(hw1$ozone))
+mean(hw1$ozone)
+hw1$ozozne[na]
+hw1$ozozne["NA"]
+hw1$ozozne["NA"]
+hw1$ozone{x == NA}
+hw1$ozone{x == NA]
+hw1$ozone{x == "NA"]
+hw1$ozone[x == "NA"]
+hw1$ozone[ozone == "NA"]
+hw1$ozone[hw1$ozone == "NA"]
+hw1$ozone[[hw1$ozone == "NA"]]
+hw1$ozone[[x == "NA"]]
+hw1$ozone[[ == "NA"]]
+hw1$ozone[["NA"]]
+hw1$ozone["NA"]
+hw1[[ ozone =="NA"]]
+hw1[[ 1 =="NA"]]
+hw1[[1,=="NA"]]
+hw1[[exact =="NA"]]
+hw1[is."na"]
+bad <- is.na(hw1$ozone)
+is.na(hw1$ozone)
+!is.na(hw1$ozone)
+is.na(hw1)
+complete.cases(hw1$ozone)
+good <- !is.na(hw1)
+dim(good)
+good
+mean(hw1$ozone)
+good <- complete.cases(ozone)
+good <- complete.cases(hw1$ozone)
+bad <- is.na(ozone)
+bad <- is.na($hw1ozone)
+bad <- is.na(hw1$ozone)
+colmeans(hw1$ozone)
+colmean(hw1$ozone)
+colMeans(hw1$ozone, na.rm=TRUE)
+colMeans(hw1, na.rm=TRUE)
+subset1 <- hw1[ozone > 31, temp > 90]
+subset1 <- [hw1$ozone > 31, hw1$temp > 90]
+subset1 <- ["hw1$ozone" > 31, "hw1$temp" > 90]
+subset1 <- hw1["ozone" > 31, "temp" > 90]
+subset1
+subset1 <- hw1[ozone > "31", temp > "90"]
+subset1 <- [ozone > "31", temp > "90"]
+subset1 <- [hw1$ozone > "31", hw1$temp > "90"]
+subset1 <- hw1[ozone > "31", temp > "90"]
+subset1 <- hw1[ozone > "31", Temp > "90"]
+subset1 <- list(hw1$ozone > "31", hw1$temp > "90")
+subset1
+subset1 <- hw1[hw1$ozone > "31", hw1$temp > "90"]
+subset1
+subset1 <- hw1[hw1$ozone > "31", hw1$temp > "90"]
+colMeans(hw1, na.rm=TRUE)
+colMeans(subset1, na.rm=TRUE)
+subset1 <- hw1[[hw1$ozone > "31", hw1$temp > "90"]]
+subset1 <- hw1(hw1$ozone > "31", hw1$temp > "90")
+subset1 <- hw1[hw1$ozone > "31", hw1$temp > "90"]
+subet1
+subset1
+subset1 <- subset(hw1, ozone>31, temp>90)
+subset1 <- subset(hw1, hw1$ozone>31, hw1$temp>90)
+subset1
+subset1 <- subset(hw1, hw1$ozone > 31 | hw1$temp > 90)
+subset1
+subset1 <- subset(hw1, hw1$ozone > 31, hw1$temp > 90)
+subset1
+subset1 <- subset(hw1, ozone > 31, temp > 90)
+subset1 <- subset(hw1, ozone > 31 & temp > 90)
+subset1 <- subset(hw1, Ozone > 31 & Temp > 90)
+subset1
+colMeans(subset1)
+subset1 <- subset(hw1, Month=6)
+subse1
+subset1
+subset1 <- subset(hw1, Month=6)
+subset1
+subset1 <- subset(hw1, Month==6)
+subset1
+colMeans(subset1)
+subset1 <- subset(hw1, Month==5)
+subset1
+install.packages("swirl")
+library(swirl)#
+swirl()
+install_from_swirl("R Programming")
+swirl()
+5+7
+x <- 5+7
+x
+y <- x-3
+y
+z <- c(1.1,9,3.4)
+z <- c(1.1, 9, 3.4)
+z <- c(1.1, 9, 3.14)
+?c
+z
+c(z, 555, z)
+z*2+100
+my_sqrt <- sqrt(z-1)
+my_sqrt
+my_div <- z/my_sqrt
+my_div
+c(1,2,3,4) + c(0,10)
+C(1,2,3,4)+c(0,10,100)
+c(1,2,3,4)+c(0,10,100)
+z*2+1000
+my_div
+getwd()
+ls()
+x <- 9
+ls()
+list.files()
+?list.files
+args9
+args()
+list.files(args())
+args(list.files())
+args(list.files)
+old.dir <- wd()
+old.dir <- list.files()
+old.dir <- getwd()
+dir.create(testdir)
+dir.create("testdir")
+setwd(testdir)
+setwd("testdir")
+file.create("mytest.R")
+ls()
+list.files()
+file.exists("mytest.R")
+file.info("mytest.R")
+file.rename("mytest2.R")
+file.rename("mytest.R" to "mytest2.R")
+file.rename("mytest.R" to mytest2.R)
+?file.rename
+file.rename("mytest.R","mytest2.R")
+?file.copy
+file.copy("mytest2.R", "mytest3.R")
+file.path(mytest3.R)
+file.path("mytest3.R")
+?file.path
+file.path('folder1', 'folder2', fsep=.Platform$file.sep)
+?dir.create
+dir.create("testdir2", file.path('testdir3'))
+dir.create(file.path('testdir2', 'testdir3'), recurive = TRUE)
+dir.create(file.path('testdir2', 'testdir3'), recursive = TRUE)
+unlink("testdir2")
+unlink("testdir2", recursive = TRUE)
+setwd(old.dir)
+unlink('testdir', recursive=TRUE)
+1:20
+pi:10
+15:1
+?`:`
+seq(1, 20)
+seq(1, 10, by=0.5)
+seq(0, 10, by=0.5)
+my_seq <- seq(5, 10, length=30)
+my_seq
+lenght(my_seq)
+length(my_seq)
+1:length(my_seq)
+seq(along.with = my_seq)
+?seq
+seq_along(my_seq)
+rep(0, times=40)
+rep(c(0, 1, 2), times-10)
+rep(c(0, 1, 2), times=10)
+rep(c(0,1,2), each=10)
+x <- matrix(1:6, 2, 3)
+for(i in seq_len(nrow(x))){}
+for(i in seq_len(nrow(x))){}
+for(i in seq_len(nrow(x))){#
+      for(j in seq_len(ncol(x)))#
+       # print(x[i,j])#
+}
+for(i in seq_len(nrow(x))){#
+      for(j in seq_len(ncol(x)))#
+       # print(x[i,j])}
+for(i in seq_len(nrow(x))){#
+      for(j in seq_len(ncol(x)))#
+       print(x[i,j])}
+for(i in seq_len(nrow(x))){#
+      for(j in seq_len(ncol(x)))#
+       print(x[i,j])}
+x
+ls()
+clear ls("bad")
+rm ls("bad")
+rm.ls("bad")
+ls("bad")
+z <- 5
+while(z >= 3 && z <= 10)        print(z)        coin <- rbinom(1, 1, .5)         if(coin==1) { ## random walk            z <- z + 1        } else {             z <- z-1         }
+while(z >= 3 && z <= 10)        print(z)        coin <- rbinom(1, 1, .5)         if(coin==1) { ## random walk            z <- z + 1        } else {             z <- z-1         } }
+z <- 5 while(z >= 3 && z <= 10)        print(z)        coin <- rbinom(1, 1, .5)         if(coin==1) { ## random walk            z <- z + 1        } else {             z <- z-1         } }
+z <- 5 while(z >= 3 && z <= 10)        print(z)        coin <- rbinom(1, 1, .5)         if(coin==1) { ## random walk            z <- z + 1        } else {             z <- z-1         } }
+z <- 5 while(z >= 3 && z <= 10)        print(z)        coin <- rbinom(1, 1, .5)         if(coin==1) { ## random walk            z <- z + 1        } else {             z <- z-1         } }
+z <- 5 while(z >= 3 && z <= 10)        print(z)        coin <- rbinom(1, 1, .5)         if(coin==1) { ## random walk            z <- z + 1        } else {             z <- z-1         } }
+z <- 5
+while(z >= 3 && z <= 10)        print(z)        coin <- rbinom(1, 1, .5)         if(coin==1) { ## random walk            z <- z + 1        } else {             z <- z-1         } }
+z

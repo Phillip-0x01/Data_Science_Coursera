@@ -1,0 +1,46 @@
+# The 'nc' data frame is already loaded into the workspace
+
+# Load the 'inference' function:
+load(url("http://assets.datacamp.com/course/dasi/inference.Rdata"))
+
+# Run the inference function:
+inference(nc$gained, type="ci", method="simulation", conflevel=0.9, est="mean", boot_method="perc")
+
+
+
+
+
+
+# Using the inference() function, now calculate the confidence intervals for the proportion of atheists in 2012 in India. 
+
+# The 'atheism' data frame is already loaded into the workspace
+
+# The subset for India for 2012:
+india <- subset(atheism, atheism$nationality == "India" & atheism$year =="2012")
+
+# The analysis using the 'inference' function:
+inference(india$response, est = "proportion", type = "ci", method = "theoretical", success = "atheist")
+
+
+
+
+
+
+# this is how you subset columns of your data, then clean the data
+myvar <- c("educ", "natdrug")
+mydata <- gss[myvar]
+mydata_clean <- na.omit(mydata)
+
+
+
+# this will group the fist set of variables by the second, and include a legend
+barplot(table(gss$xmarsex,gss$sex), beside=TRUE, legend=TRUE)
+
+
+
+
+
+
+
+
+
