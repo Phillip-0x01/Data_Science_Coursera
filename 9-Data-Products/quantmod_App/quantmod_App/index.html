@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Price Analsysis App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Stock Price Analsysis App">
+  <meta name="author" content="Phillip Henkels">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Stock Price Analsysis App</h1>
+    <h2>Using R's 'quantmod' Package</h2>
+    <p>Phillip Henkels<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Presentation Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The aim of this presentation is to provide an overview the Stock Price Analsysis App which I created and published using R&#39;s Shiny package.  This project was completed during my enrollment in the Creating Data Products course offered by John Hopkin&#39;s University as part of their Data Scientist Specalization curiculum.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Application Description</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Stock Price Analysis App takes a stock symbol and data range input to then retrive stock price data and create an Open-High-Low-Close (OHLC) bar chart as well as a volume chart.  Users also have the option to add addtional charts and/or technical overlays to the OHLC by selecting any of the check boxes listed in the lower part of the side panel. The server side code utilizes the &#39;quantmod&#39; package developed by Jeffrey A. Ryan located on CRAN.  For more infomration about the package click  <a href="https://cran.r-project.org/web/packages/quantmod/index.html">here</a>.</p>
+
+<p>The application can be accessed via the following URL:
+<a href="https://philliphenkels.shinyapps.io/quantmod_App/">https://philliphenkels.shinyapps.io/quantmod_App/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Screenshot of Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/screen_shot.png" alt="Screenshot"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Basic Code</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Here&#39;s an example of the code used to create a OHLC bar chart of Apple&#39;s stock prices over the past three months</p>
+
+<pre><code class="r">library(quantmod)
+getSymbols(&quot;AAPL&quot;)
+chartSeries(AAPL, subset=&#39;last 3 months&#39;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Presentation Overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Application Description'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Screenshot of Application'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Basic Code'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

@@ -2,7 +2,14 @@ library(shiny)
 
 # Define UI for application demonstrates R package quantmod graph capabilities
 shinyUI(pageWithSidebar(
-    headerPanel(""),
+    headerPanel(
+        h1("Stock Price App",
+        
+        h5("Use the text box below to enter a stock symbol (Apple's is entered by default) and below that a date range to create create an Open-High-Low-Close (OHLC) bar chart as well as a volume chart based on stock price/trading data.  You can also click on the link below the text input box to look up a stock ticker symbol if needed.  
+           Once you have the stock sysmbol entered, you can then add addtional charts and/or technical overlays to the OHLC bar chart by selecting any of the check boxes listed in the lower part of the side panel."))
+    ),
+    
+    
     sidebarPanel(
       
       textInput("stock", "Enter a stock symbol below", value = "AAPL", width = "50%"),
@@ -15,6 +22,9 @@ shinyUI(pageWithSidebar(
       br(),
     
       h4("Add Technical Analysis Overlay(s)"),
+      p(em("(descriptions can be found ", 
+           a("here", href="http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators",target="_blank"), ")")),
+      
      
        checkboxGroupInput("trend", "Trend:",
                           c("Directional Movement Index" = "addADX()",
